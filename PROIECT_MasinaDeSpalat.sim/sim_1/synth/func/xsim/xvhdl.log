@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Bist_D.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Bist_D'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Div_FrecBut.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Div_FrecBut'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Debouncer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Debouncer'

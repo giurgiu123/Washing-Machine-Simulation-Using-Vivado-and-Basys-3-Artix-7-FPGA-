@@ -1,0 +1,161 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Jun  3 22:27:22 2024
+| Host         : Andrei running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MasinaDeSpalat_control_sets_placed.rpt
+| Design       : MasinaDeSpalat
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    83 |
+|    Minimum number of control sets                        |    83 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   546 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    83 |
+| >= 0 to < 4        |    73 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |            8 |
+| No           | No                    | Yes                    |              20 |            8 |
+| No           | Yes                   | No                     |              44 |           29 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             118 |           67 |
+| Yes          | Yes                   | No                     |              17 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+----------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|             Clock Signal            |                       Enable Signal                      |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------+----------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+|  UE/rez_etape_reg[1]_LDC_i_1_n_0    |                                                          | UC/FSM_onehot_curr_state_reg[12]_0   |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[10]_LDC_i_1_n_0   |                                                          | UE/rez_total_reg[10]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[8]_LDC_i_1_n_0    |                                                          | UE/rez_total_reg[8]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[3]_LDC_i_1_n_0    |                                                          | UE/rez_total_reg[3]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[9]_LDC_i_1_n_0    |                                                          | UE/rez_total_reg[9]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[5]_LDC_i_1_n_0    |                                                          | UE/rez_total_reg[5]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[13]_LDC_i_1_n_0   |                                                          | UE/rez_total_reg[13]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[2]_LDC_i_1_n_0    |                                                          | UE/rez_total_reg[2]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[12]_LDC_i_1_n_0   |                                                          | UE/rez_total_reg[12]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[11]_LDC_i_1_n_0   |                                                          | UE/rez_total_reg[11]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[6]_LDC_i_1_n_0    |                                                          | UE/rez_total_reg[6]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[7]_LDC_i_1_n_0    |                                                          | UE/rez_total_reg[7]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[1]_LDC_i_1_n_0    |                                                          | UE/rez_total_reg[1]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  UE/rez_total_reg[4]_LDC_i_1_n_0    |                                                          | UE/rez_total_reg[4]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  UC/FSM_onehot_curr_state_reg[4]_5  |                                                          | UC/FSM_onehot_curr_state_reg[4]_6    |                1 |              1 |         1.00 |
+|  UC/FSM_onehot_curr_state_reg[6]_1  |                                                          | UC/FSM_onehot_curr_state_reg[12]_2   |                1 |              1 |         1.00 |
+|  UC/FSM_onehot_curr_state_reg[4]_2  |                                                          | UC/FSM_onehot_curr_state_reg[4]_3    |                1 |              1 |         1.00 |
+|  UC/FSM_onehot_curr_state_reg[4]_0  |                                                          | UC/FSM_onehot_curr_state_reg[4]_1    |                1 |              1 |         1.00 |
+|  UC/FSM_onehot_curr_state_reg[14]_0 |                                                          | Reset_sw_IBUF                        |                1 |              1 |         1.00 |
+|  UC/FSM_onehot_curr_state_reg[6]_0  |                                                          | UC/FSM_onehot_curr_state_reg[12]_1   |                1 |              1 |         1.00 |
+|  UC/FSM_onehot_curr_state_reg[8]_0  |                                                          | UC/Reset_sw                          |                1 |              1 |         1.00 |
+|  UC/q_temp_sel_reg[1]               |                                                          | UC/q_temp_sel_reg[0]                 |                1 |              1 |         1.00 |
+|  UC/q_temp_sel_reg[0]_1             |                                                          | UC/FSM_onehot_curr_state_reg[4]_4    |                1 |              1 |         1.00 |
+|  UC/q_temp_sel_reg[1]_0             |                                                          | UC/q_temp_sel_reg[0]_0               |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[12]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[11]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[3]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[6]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[12]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[7]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[5]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[4]_4    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[1]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[1]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[4]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UE/rez_etape_reg[1]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[12]_0   |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[4]_5    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[6]_1    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[12]_1   |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[4]_6    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/q_temp_sel_reg[0]                 |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[4]_2    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[12]_2   |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[4]_1    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[4]_0    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/Reset_sw                          |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[6]_0    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[4]_3    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/FSM_onehot_curr_state_reg[8]_0    |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/q_temp_sel_reg[1]                 |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/q_temp_sel_reg[0]_1               |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/q_temp_sel_reg[1]_0               |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UC/q_temp_sel_reg[0]_0               |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[10]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[10]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[13]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[4]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[6]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[2]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[7]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[8]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[3]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[9]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[11]_LDC_i_2_n_0     |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[5]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[13]_LDC_i_1_n_0     |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[9]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[2]_LDC_i_1_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total_reg[8]_LDC_i_2_n_0      |                1 |              1 |         1.00 |
+|  N_BUFG                             | UE/rez_1min0                                             | UC/FSM_onehot_curr_state_reg[14]_1   |                1 |              2 |         2.00 |
+|  Clk_IBUF_BUFG                      |                                                          | Reset_sw_IBUF                        |                1 |              3 |         3.00 |
+|  N_BUFG                             | UC/o_uc_en_total                                         | UE/rez_total[15]_i_2_n_0             |                1 |              3 |         3.00 |
+|  N_BUFG                             | UE/rez_1min0                                             | UC/FSM_onehot_curr_state_reg[14]_0   |                1 |              4 |         4.00 |
+|  N_BUFG                             | UE/rez_1min0                                             | Reset_sw_IBUF                        |                1 |              4 |         4.00 |
+|  N_BUFG                             | UE/rez_etape0                                            | UE/rez_etape[15]_i_2_n_0             |                2 |              6 |         3.00 |
+|  o_ue_presp_BUFG                    |                                                          |                                      |                3 |              6 |         2.00 |
+|  Clk_IBUF_BUFG                      | UE/ssd/binary_to_bcd_conversion/bcds_out_reg_next        | Reset_sw_IBUF                        |                4 |             16 |         4.00 |
+|  Clk_IBUF_BUFG                      |                                                          |                                      |                5 |             17 |         3.40 |
+|  Clk_IBUF_BUFG                      |                                                          | UC/FSM_onehot_curr_state[16]_i_2_n_0 |                7 |             17 |         2.43 |
+|  Clk_IBUF_BUFG                      | UC/Q[0]                                                  | Reset_sw_IBUF                        |                6 |             17 |         2.83 |
+|  Clk_IBUF_BUFG                      |                                                          | UE/divfrecv/eqOp                     |                5 |             20 |         4.00 |
+|  Clk_IBUF_BUFG                      | UE/ssd/binary_to_bcd_conversion/shift_counter[4]_i_1_n_0 | Reset_sw_IBUF                        |               11 |             37 |         3.36 |
++-------------------------------------+----------------------------------------------------------+--------------------------------------+------------------+----------------+--------------+
+
+

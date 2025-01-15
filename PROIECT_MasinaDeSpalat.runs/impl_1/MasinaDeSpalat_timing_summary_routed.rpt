@@ -1,0 +1,747 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Mon Jun  3 22:28:06 2024
+| Host         : Andrei running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file MasinaDeSpalat_timing_summary_routed.rpt -pb MasinaDeSpalat_timing_summary_routed.pb -rpx MasinaDeSpalat_timing_summary_routed.rpx -warn_on_violation
+| Design       : MasinaDeSpalat
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                     Violations  
+---------  ----------------  ------------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell     192         
+LUTAR-1    Warning           LUT drives async reset alert    51          
+TIMING-20  Warning           Non-clocked latch               30          
+LATCH-1    Advisory          Existing latches in the design  1           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (303)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (531)
+5. checking no_input_delay (13)
+6. checking no_output_delay (20)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (303)
+--------------------------
+ There are 127 register/latch pins with no clock driven by root clock pin: Clk (HIGH)
+
+ There are 24 register/latch pins with no clock driven by root clock pin: Reset_sw (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: UC/FSM_onehot_curr_state_reg[10]/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: UC/FSM_onehot_curr_state_reg[12]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UC/FSM_onehot_curr_state_reg[14]/Q (HIGH)
+
+ There are 13 register/latch pins with no clock driven by root clock pin: UC/FSM_onehot_curr_state_reg[1]/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: UC/FSM_onehot_curr_state_reg[4]/Q (HIGH)
+
+ There are 9 register/latch pins with no clock driven by root clock pin: UC/FSM_onehot_curr_state_reg[6]/Q (HIGH)
+
+ There are 8 register/latch pins with no clock driven by root clock pin: UC/FSM_onehot_curr_state_reg[8]/Q (HIGH)
+
+ There are 65 register/latch pins with no clock driven by root clock pin: UE/divfrecv/N_reg/Q (HIGH)
+
+ There are 6 register/latch pins with no clock driven by root clock pin: UE/q_presp_sel_reg/Q (HIGH)
+
+ There are 7 register/latch pins with no clock driven by root clock pin: UE/q_temp_sel_reg[0]/Q (HIGH)
+
+ There are 5 register/latch pins with no clock driven by root clock pin: UE/q_temp_sel_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[10]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[11]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[12]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[13]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[3]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[4]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[5]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[6]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[7]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[8]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: UE/q_timp_total_reg[9]/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (531)
+--------------------------------------------------
+ There are 531 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (13)
+-------------------------------
+ There are 13 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (20)
+--------------------------------
+ There are 20 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  551          inf        0.000                      0                  551           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           551 Endpoints
+Min Delay           551 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Anozi[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.753ns  (logic 4.990ns (39.131%)  route 7.763ns (60.869%))
+  Logic Levels:           6  (FDCE=1 LUT3=1 LUT5=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          3.315     7.016    UE/ssd/o_uc_en_ssd
+    SLICE_X65Y25         LUT3 (Prop_lut3_I2_O)        0.356     7.372 r  UE/ssd/Anozi_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           1.663     9.035    Anozi_OBUF[3]
+    W4                   OBUF (Prop_obuf_I_O)         3.718    12.753 r  Anozi_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    12.753    Anozi[3]
+    W4                                                                r  Anozi[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Anozi[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.718ns  (logic 4.975ns (39.117%)  route 7.743ns (60.883%))
+  Logic Levels:           6  (FDCE=1 LUT3=1 LUT5=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          3.093     6.794    UE/ssd/o_uc_en_ssd
+    SLICE_X65Y25         LUT3 (Prop_lut3_I2_O)        0.354     7.148 r  UE/ssd/Anozi_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           1.865     9.013    Anozi_OBUF[0]
+    U2                   OBUF (Prop_obuf_I_O)         3.705    12.718 r  Anozi_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    12.718    Anozi[0]
+    U2                                                                r  Anozi[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Anozi[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.535ns  (logic 4.767ns (38.031%)  route 7.768ns (61.969%))
+  Logic Levels:           6  (FDCE=1 LUT3=1 LUT5=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          3.315     7.016    UE/ssd/o_uc_en_ssd
+    SLICE_X65Y25         LUT3 (Prop_lut3_I2_O)        0.328     7.344 r  UE/ssd/Anozi_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           1.668     9.012    Anozi_OBUF[2]
+    V4                   OBUF (Prop_obuf_I_O)         3.523    12.535 r  Anozi_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    12.535    Anozi[2]
+    V4                                                                r  Anozi[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Anozi[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.472ns  (logic 4.743ns (38.030%)  route 7.729ns (61.970%))
+  Logic Levels:           6  (FDCE=1 LUT3=1 LUT5=3 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          3.093     6.794    UE/ssd/o_uc_en_ssd
+    SLICE_X65Y25         LUT3 (Prop_lut3_I2_O)        0.328     7.122 r  UE/ssd/Anozi_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           1.851     8.973    Anozi_OBUF[1]
+    U4                   OBUF (Prop_obuf_I_O)         3.499    12.472 r  Anozi_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    12.472    Anozi[1]
+    U4                                                                r  Anozi[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Catozi[6]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.378ns  (logic 4.755ns (38.411%)  route 7.624ns (61.589%))
+  Logic Levels:           6  (FDCE=1 LUT5=3 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          3.113     6.814    UE/ssd/binary_to_bcd_conversion/o_uc_en_ssd
+    SLICE_X62Y20         LUT6 (Prop_lut6_I0_O)        0.328     7.142 r  UE/ssd/binary_to_bcd_conversion/Catozi_OBUF[6]_inst_i_1/O
+                         net (fo=1, routed)           1.726     8.868    Catozi_OBUF[6]
+    W7                   OBUF (Prop_obuf_I_O)         3.511    12.378 r  Catozi_OBUF[6]_inst/O
+                         net (fo=0)                   0.000    12.378    Catozi[6]
+    W7                                                                r  Catozi[6] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Catozi[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.279ns  (logic 4.775ns (38.893%)  route 7.503ns (61.107%))
+  Logic Levels:           6  (FDCE=1 LUT5=3 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          2.855     6.556    UE/ssd/binary_to_bcd_conversion/o_uc_en_ssd
+    SLICE_X63Y18         LUT6 (Prop_lut6_I1_O)        0.328     6.884 r  UE/ssd/binary_to_bcd_conversion/Catozi_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           1.863     8.747    Catozi_OBUF[0]
+    U7                   OBUF (Prop_obuf_I_O)         3.531    12.279 r  Catozi_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    12.279    Catozi[0]
+    U7                                                                r  Catozi[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Catozi[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.123ns  (logic 4.780ns (39.427%)  route 7.343ns (60.573%))
+  Logic Levels:           6  (FDCE=1 LUT5=3 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          2.888     6.589    UE/ssd/binary_to_bcd_conversion/o_uc_en_ssd
+    SLICE_X63Y20         LUT6 (Prop_lut6_I0_O)        0.328     6.917 r  UE/ssd/binary_to_bcd_conversion/Catozi_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           1.670     8.587    Catozi_OBUF[3]
+    V8                   OBUF (Prop_obuf_I_O)         3.536    12.123 r  Catozi_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    12.123    Catozi[3]
+    V8                                                                r  Catozi[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Catozi[5]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.079ns  (logic 4.773ns (39.515%)  route 7.306ns (60.485%))
+  Logic Levels:           6  (FDCE=1 LUT5=3 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          2.611     6.312    UE/ssd/binary_to_bcd_conversion/o_uc_en_ssd
+    SLICE_X63Y20         LUT6 (Prop_lut6_I5_O)        0.328     6.640 r  UE/ssd/binary_to_bcd_conversion/Catozi_OBUF[5]_inst_i_1/O
+                         net (fo=1, routed)           1.910     8.550    Catozi_OBUF[5]
+    W6                   OBUF (Prop_obuf_I_O)         3.529    12.079 r  Catozi_OBUF[5]_inst/O
+                         net (fo=0)                   0.000    12.079    Catozi[5]
+    W6                                                                r  Catozi[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Catozi[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.067ns  (logic 4.748ns (39.351%)  route 7.318ns (60.649%))
+  Logic Levels:           6  (FDCE=1 LUT5=3 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          2.860     6.561    UE/ssd/binary_to_bcd_conversion/o_uc_en_ssd
+    SLICE_X63Y18         LUT6 (Prop_lut6_I1_O)        0.328     6.889 r  UE/ssd/binary_to_bcd_conversion/Catozi_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           1.674     8.562    Catozi_OBUF[1]
+    V5                   OBUF (Prop_obuf_I_O)         3.504    12.067 r  Catozi_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    12.067    Catozi[1]
+    V5                                                                r  Catozi[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[11]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            Catozi[4]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        12.007ns  (logic 4.779ns (39.803%)  route 7.228ns (60.197%))
+  Logic Levels:           6  (FDCE=1 LUT5=3 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[11]/C
+    SLICE_X2Y17          FDCE (Prop_fdce_C_Q)         0.518     0.518 f  UC/FSM_onehot_curr_state_reg[11]/Q
+                         net (fo=4, routed)           0.979     1.497    UC/FSM_onehot_curr_state_reg_n_0_[11]
+    SLICE_X3Y18          LUT5 (Prop_lut5_I1_O)        0.124     1.621 f  UC/rez_total[15]_i_4/O
+                         net (fo=2, routed)           0.821     2.443    UC/FSM_onehot_curr_state_reg[5]_0
+    SLICE_X3Y17          LUT5 (Prop_lut5_I4_O)        0.124     2.567 f  UC/rez_total[15]_i_1/O
+                         net (fo=31, routed)          0.984     3.551    UC/o_uc_en_total
+    SLICE_X2Y13          LUT5 (Prop_lut5_I3_O)        0.150     3.701 f  UC/Catozi_OBUF[6]_inst_i_2/O
+                         net (fo=11, routed)          2.606     6.307    UE/ssd/binary_to_bcd_conversion/o_uc_en_ssd
+    SLICE_X63Y20         LUT6 (Prop_lut6_I0_O)        0.328     6.635 r  UE/ssd/binary_to_bcd_conversion/Catozi_OBUF[4]_inst_i_1/O
+                         net (fo=1, routed)           1.837     8.472    Catozi_OBUF[4]
+    U8                   OBUF (Prop_obuf_I_O)         3.535    12.007 r  Catozi_OBUF[4]_inst/O
+                         net (fo=0)                   0.000    12.007    Catozi[4]
+    U8                                                                r  Catozi[4] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 UE/ssd/binary_to_bcd_conversion/bcds_reg[13]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            UE/ssd/binary_to_bcd_conversion/bcds_out_reg_reg[13]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.273ns  (logic 0.141ns (51.608%)  route 0.132ns (48.392%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y19         FDCE                         0.000     0.000 r  UE/ssd/binary_to_bcd_conversion/bcds_reg[13]/C
+    SLICE_X63Y19         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  UE/ssd/binary_to_bcd_conversion/bcds_reg[13]/Q
+                         net (fo=4, routed)           0.132     0.273    UE/ssd/binary_to_bcd_conversion/bcds_reg_n_0_[13]
+    SLICE_X63Y20         FDCE                                         r  UE/ssd/binary_to_bcd_conversion/bcds_out_reg_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[10]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            UC/FSM_onehot_curr_state_reg[11]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.279ns  (logic 0.186ns (66.769%)  route 0.093ns (33.231%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X3Y17          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[10]/C
+    SLICE_X3Y17          FDCE (Prop_fdce_C_Q)         0.141     0.141 r  UC/FSM_onehot_curr_state_reg[10]/Q
+                         net (fo=10, routed)          0.093     0.234    UC/Q[7]
+    SLICE_X2Y17          LUT6 (Prop_lut6_I5_O)        0.045     0.279 r  UC/FSM_onehot_curr_state[11]_i_1/O
+                         net (fo=1, routed)           0.000     0.279    UC/FSM_onehot_curr_state[11]_i_1_n_0
+    SLICE_X2Y17          FDCE                                         r  UC/FSM_onehot_curr_state_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UE/ssd/binary_to_bcd_conversion/binar_reg[1]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            UE/ssd/binary_to_bcd_conversion/binar_reg[2]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.283ns  (logic 0.186ns (65.755%)  route 0.097ns (34.245%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X45Y17         FDCE                         0.000     0.000 r  UE/ssd/binary_to_bcd_conversion/binar_reg[1]/C
+    SLICE_X45Y17         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  UE/ssd/binary_to_bcd_conversion/binar_reg[1]/Q
+                         net (fo=1, routed)           0.097     0.238    UE/ssd/binary_to_bcd_conversion/in3[2]
+    SLICE_X44Y17         LUT6 (Prop_lut6_I0_O)        0.045     0.283 r  UE/ssd/binary_to_bcd_conversion/binar[2]_i_1/O
+                         net (fo=1, routed)           0.000     0.283    UE/ssd/binary_to_bcd_conversion/binar[2]_i_1_n_0
+    SLICE_X44Y17         FDCE                                         r  UE/ssd/binary_to_bcd_conversion/binar_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UE/ssd/binary_to_bcd_conversion/shift_counter_reg[3]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            UE/ssd/binary_to_bcd_conversion/shift_counter_reg[4]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.295ns  (logic 0.227ns (77.066%)  route 0.068ns (22.934%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y22         FDCE                         0.000     0.000 r  UE/ssd/binary_to_bcd_conversion/shift_counter_reg[3]/C
+    SLICE_X47Y22         FDCE (Prop_fdce_C_Q)         0.128     0.128 r  UE/ssd/binary_to_bcd_conversion/shift_counter_reg[3]/Q
+                         net (fo=3, routed)           0.068     0.196    UE/ssd/binary_to_bcd_conversion/shift_counter[3]
+    SLICE_X47Y22         LUT6 (Prop_lut6_I3_O)        0.099     0.295 r  UE/ssd/binary_to_bcd_conversion/shift_counter[4]_i_2/O
+                         net (fo=1, routed)           0.000     0.295    UE/ssd/binary_to_bcd_conversion/shift_counter_next[4]
+    SLICE_X47Y22         FDCE                                         r  UE/ssd/binary_to_bcd_conversion/shift_counter_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UE/rez_total_reg[9]_C/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            UE/ssd/binary_to_bcd_conversion/binar_reg[9]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.295ns  (logic 0.186ns (63.075%)  route 0.109ns (36.925%))
+  Logic Levels:           2  (FDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X44Y20         FDCE                         0.000     0.000 r  UE/rez_total_reg[9]_C/C
+    SLICE_X44Y20         FDCE (Prop_fdce_C_Q)         0.141     0.141 r  UE/rez_total_reg[9]_C/Q
+                         net (fo=4, routed)           0.109     0.250    UE/ssd/binary_to_bcd_conversion/binar_reg[9]_2
+    SLICE_X45Y20         LUT6 (Prop_lut6_I4_O)        0.045     0.295 r  UE/ssd/binary_to_bcd_conversion/binar[9]_i_1/O
+                         net (fo=1, routed)           0.000     0.295    UE/ssd/binary_to_bcd_conversion/binar[9]_i_1_n_0
+    SLICE_X45Y20         FDCE                                         r  UE/ssd/binary_to_bcd_conversion/binar_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[0]/C
+                            (rising edge-triggered cell FDPE)
+  Destination:            UC/FSM_onehot_curr_state_reg[1]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.295ns  (logic 0.186ns (63.057%)  route 0.109ns (36.943%))
+  Logic Levels:           2  (FDPE=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y13          FDPE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[0]/C
+    SLICE_X1Y13          FDPE (Prop_fdpe_C_Q)         0.141     0.141 r  UC/FSM_onehot_curr_state_reg[0]/Q
+                         net (fo=2, routed)           0.109     0.250    UC/FSM_onehot_curr_state_reg_n_0_[0]
+    SLICE_X0Y13          LUT5 (Prop_lut5_I2_O)        0.045     0.295 r  UC/FSM_onehot_curr_state[1]_i_1/O
+                         net (fo=1, routed)           0.000     0.295    UC/FSM_onehot_curr_state[1]_i_1_n_0
+    SLICE_X0Y13          FDCE                                         r  UC/FSM_onehot_curr_state_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UE/ssd/binary_to_bcd_conversion/FSM_onehot_state_reg[2]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            UE/ssd/binary_to_bcd_conversion/FSM_onehot_state_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.296ns  (logic 0.148ns (49.979%)  route 0.148ns (50.021%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X46Y22         FDCE                         0.000     0.000 r  UE/ssd/binary_to_bcd_conversion/FSM_onehot_state_reg[2]/C
+    SLICE_X46Y22         FDCE (Prop_fdce_C_Q)         0.148     0.148 r  UE/ssd/binary_to_bcd_conversion/FSM_onehot_state_reg[2]/Q
+                         net (fo=19, routed)          0.148     0.296    UE/ssd/binary_to_bcd_conversion/bcds_out_reg_next
+    SLICE_X46Y22         FDPE                                         r  UE/ssd/binary_to_bcd_conversion/FSM_onehot_state_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UC/FSM_onehot_curr_state_reg[16]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            UC/FSM_onehot_curr_state_reg[0]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.312ns  (logic 0.227ns (72.858%)  route 0.085ns (27.142%))
+  Logic Levels:           2  (FDCE=1 LUT5=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y13          FDCE                         0.000     0.000 r  UC/FSM_onehot_curr_state_reg[16]/C
+    SLICE_X1Y13          FDCE (Prop_fdce_C_Q)         0.128     0.128 r  UC/FSM_onehot_curr_state_reg[16]/Q
+                         net (fo=4, routed)           0.085     0.213    UC/FSM_onehot_curr_state_reg_n_0_[16]
+    SLICE_X1Y13          LUT5 (Prop_lut5_I0_O)        0.099     0.312 r  UC/FSM_onehot_curr_state[0]_i_1/O
+                         net (fo=1, routed)           0.000     0.312    UC/FSM_onehot_curr_state[0]_i_1_n_0
+    SLICE_X1Y13          FDPE                                         r  UC/FSM_onehot_curr_state_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UE/ssd/binary_to_bcd_conversion/bcds_reg[8]/C
+                            (rising edge-triggered cell FDCE)
+  Destination:            UE/ssd/binary_to_bcd_conversion/bcds_out_reg_reg[8]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.320ns  (logic 0.128ns (40.027%)  route 0.192ns (59.973%))
+  Logic Levels:           1  (FDCE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y20         FDCE                         0.000     0.000 r  UE/ssd/binary_to_bcd_conversion/bcds_reg[8]/C
+    SLICE_X61Y20         FDCE (Prop_fdce_C_Q)         0.128     0.128 r  UE/ssd/binary_to_bcd_conversion/bcds_reg[8]/Q
+                         net (fo=5, routed)           0.192     0.320    UE/ssd/binary_to_bcd_conversion/bcds_reg_n_0_[8]
+    SLICE_X62Y20         FDCE                                         r  UE/ssd/binary_to_bcd_conversion/bcds_out_reg_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 UE/rez_total_reg[13]_LDC/G
+                            (positive level-sensitive latch)
+  Destination:            UE/ssd/binary_to_bcd_conversion/binar_reg[13]/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.325ns  (logic 0.203ns (62.389%)  route 0.122ns (37.611%))
+  Logic Levels:           2  (LDCE=1 LUT6=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X45Y21         LDCE                         0.000     0.000 r  UE/rez_total_reg[13]_LDC/G
+    SLICE_X45Y21         LDCE (EnToQ_ldce_G_Q)        0.158     0.158 r  UE/rez_total_reg[13]_LDC/Q
+                         net (fo=4, routed)           0.122     0.280    UE/ssd/binary_to_bcd_conversion/binar_reg[13]_1
+    SLICE_X46Y21         LUT6 (Prop_lut6_I3_O)        0.045     0.325 r  UE/ssd/binary_to_bcd_conversion/binar[13]_i_1/O
+                         net (fo=1, routed)           0.000     0.325    UE/ssd/binary_to_bcd_conversion/binar[13]_i_1_n_0
+    SLICE_X46Y21         FDCE                                         r  UE/ssd/binary_to_bcd_conversion/binar_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

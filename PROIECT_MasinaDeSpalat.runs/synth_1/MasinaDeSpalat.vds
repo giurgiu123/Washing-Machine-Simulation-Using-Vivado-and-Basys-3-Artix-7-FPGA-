@@ -1,0 +1,328 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jun  3 22:25:05 2024
+# Process ID: 21544
+# Current directory: D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.runs/synth_1
+# Command line: vivado.exe -log MasinaDeSpalat.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MasinaDeSpalat.tcl
+# Log file: D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.runs/synth_1/MasinaDeSpalat.vds
+# Journal file: D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.runs/synth_1\vivado.jou
+# Running On: Andrei, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 17024 MB
+#-----------------------------------------------------------
+source MasinaDeSpalat.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 473.477 ; gain = 176.410
+Command: read_checkpoint -auto_incremental -incremental D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/utils_1/imports/synth_1/MuxIntrare_ModAUTOMAT.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/utils_1/imports/synth_1/MuxIntrare_ModAUTOMAT.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MasinaDeSpalat -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13796
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1308.980 ; gain = 439.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MasinaDeSpalat' [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/MasinaDeSpalat.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'Unitate_Control' [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Control.vhd:73]
+WARNING: [Synth 8-614] signal 'ON_sw' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Control.vhd:80]
+WARNING: [Synth 8-614] signal 'Reset_sw' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Control.vhd:80]
+WARNING: [Synth 8-614] signal 'i_final' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Control.vhd:89]
+WARNING: [Synth 8-614] signal 'i_timp_incalzire' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Control.vhd:164]
+WARNING: [Synth 8-614] signal 'i_fin_asteptare' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Control.vhd:164]
+INFO: [Synth 8-256] done synthesizing module 'Unitate_Control' (0#1) [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Control.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'Unitate_Executie' [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'DivFrecv' [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/DivFrecv.vhd:39]
+WARNING: [Synth 8-614] signal 'N' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/DivFrecv.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'DivFrecv' (0#1) [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/DivFrecv.vhd:39]
+INFO: [Synth 8-226] default block is never used [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:111]
+INFO: [Synth 8-226] default block is never used [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:245]
+WARNING: [Synth 8-614] signal 'timp_presp' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:255]
+WARNING: [Synth 8-614] signal 'timp_spprinc' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:255]
+WARNING: [Synth 8-614] signal 'rez_etape' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:279]
+WARNING: [Synth 8-614] signal 'rez_1min' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:311]
+WARNING: [Synth 8-614] signal 'fin_1min' is read in the process but is not in the sensitivity list [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:311]
+INFO: [Synth 8-638] synthesizing module 'ssd' [C:/Users/chira/Downloads/ssd.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'binary_bcd' [C:/Users/chira/Downloads/binary_bcd.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'binary_bcd' (0#1) [C:/Users/chira/Downloads/binary_bcd.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ssd' (0#1) [C:/Users/chira/Downloads/ssd.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Unitate_Executie' (0#1) [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'MasinaDeSpalat' (0#1) [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/MasinaDeSpalat.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element q_vit_sel_reg was removed.  [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:189]
+WARNING: [Synth 8-6014] Unused sequential element q_usa_sel_reg was removed.  [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:224]
+WARNING: [Synth 8-7129] Port Usa_sw in module Unitate_Executie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sel_Vit_sw[1] in module Unitate_Executie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sel_Vit_sw[0] in module Unitate_Executie is either unconnected or has no load
+WARNING: [Synth 8-7129] Port i_usa_inchisa in module Unitate_Executie is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1420.512 ; gain = 551.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1420.512 ; gain = 551.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1420.512 ; gain = 551.355
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1420.512 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/Basys-3-Master.xdc]
+Finished Parsing XDC File [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MasinaDeSpalat_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MasinaDeSpalat_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1449.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1449.133 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'Unitate_Control'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'binary_bcd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                00000000000000001 |                            00000
+               asteptmod |                00000000000000010 |                            00001
+                prestart |                00000000000000100 |                            00010
+            startspalare |                00000000000001000 |                            00011
+              prespalare |                00000000000010000 |                            00100
+               waitpresp |                00000000000100000 |                            00101
+       spalareprincipala |                00000000001000000 |                            00110
+             waitspprinc |                00000000010000000 |                            00111
+                 clatire |                00000000100000000 |                            01000
+             waitclatire |                00000001000000000 |                            01001
+             clatiresupl |                00000010000000000 |                            01010
+            waitclatsupl |                00000100000000000 |                            01011
+            centrifugare |                00001000000000000 |                            01100
+        waitcentrifugare |                00010000000000000 |                            01101
+               asteptusa |                00100000000000000 |                            01110
+              astept1min |                01000000000000000 |                            01111
+                   final |                10000000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'Unitate_Control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   start |                              001 |                               00
+                   shift |                              010 |                               01
+                    done |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'binary_bcd'
+WARNING: [Synth 8-327] inferring latch for variable 'timp_presp_reg' [D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.srcs/sources_1/new/Unitate_Executie.vhd:263]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 5     
+	   3 Input   16 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input   20 Bit        Muxes := 1     
+	  17 Input   17 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 12    
+	  17 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 9     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 4     
+	   3 Input    5 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	  17 Input    1 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design MasinaDeSpalat has port Led_err driven by constant 0
+WARNING: [Synth 8-7129] Port Sel_Vit_sw[1] in module MasinaDeSpalat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Sel_Vit_sw[0] in module MasinaDeSpalat is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (UE/timp_presp_reg[0]) is unused and will be removed from module MasinaDeSpalat.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:44 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    26|
+|3     |LUT1   |    15|
+|4     |LUT2   |    36|
+|5     |LUT3   |   121|
+|6     |LUT4   |    23|
+|7     |LUT5   |    40|
+|8     |LUT6   |    63|
+|9     |FDCE   |   109|
+|10    |FDPE   |    29|
+|11    |FDRE   |    54|
+|12    |LD     |     6|
+|13    |LDC    |    24|
+|14    |IBUF   |    14|
+|15    |OBUF   |    21|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1449.133 ; gain = 579.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:49 . Memory (MB): peak = 1449.133 ; gain = 551.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1449.133 ; gain = 579.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1449.133 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1451.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  LD => LDCE: 6 instances
+  LDC => LDCE: 24 instances
+
+Synth Design complete | Checksum: 94932348
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:01 . Memory (MB): peak = 1451.938 ; gain = 974.465
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1451.938 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.runs/synth_1/MasinaDeSpalat.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MasinaDeSpalat_utilization_synth.rpt -pb MasinaDeSpalat_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 22:26:21 2024...
