@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Facultate/Anul1/Sem2/PSN/PROIECT_MasinaDeSpalat/PROIECT_MasinaDeSpalat.sim/sim_1/synth/func/xsim/MasinaDeSpalat_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DivFrecv
+INFO: [VRFC 10-311] analyzing module MasinaDeSpalat
+INFO: [VRFC 10-311] analyzing module Unitate_Control
+INFO: [VRFC 10-311] analyzing module Unitate_Executie
+INFO: [VRFC 10-311] analyzing module binary_bcd
+INFO: [VRFC 10-311] analyzing module ssd
+INFO: [VRFC 10-311] analyzing module glbl
